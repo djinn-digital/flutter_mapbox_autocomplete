@@ -59,7 +59,7 @@ class _MapBoxAutoCompleteWidgetState extends State<MapBoxAutoCompleteWidget> {
       String url =
           "https://api.mapbox.com/geocoding/v5/mapbox.places/$input.json?access_token=${widget.apiKey}&cachebuster=1566806258853&autocomplete=true&language=${widget.language}&limit=${widget.limit}";
       if (widget.location != null) {
-        url += "&proximity=${widget.location.lng}%2C${widget.location.lat}";
+        url += "&proximity=${widget.location.lng}%2C${widget.location.lat}"; 
       }
       if (widget.country != null) {
         url += "&country=${widget.country}";
